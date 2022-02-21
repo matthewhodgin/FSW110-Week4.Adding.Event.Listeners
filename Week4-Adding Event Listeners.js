@@ -19,20 +19,15 @@ square.addEventListener('dblclick',function handleButtonClick() {
     square.style.backgroundColor = 'red';
 })
 
-document.body.addEventListener('wheel',function handleButtonClick() {
+window.addEventListener('wheel',function handleButtonClick() {
     square.style.backgroundColor = 'purple';
 })
 
-document.addEventListener("keydown", function(handleKeyboardEvent) {
-    square.style.backgroundColor = 'green';
-    console.log(handleKeyboardEvent.keydown);
+document.addEventListener('keydown', function(ev) {
+    if (ev.key == 'g'){square.style.backgroundColor = 'green';}
+    if (ev.key == 'y'){square.style.backgroundColor = 'yellow';}
+    if (ev.key == 'r'){square.style.backgroundColor = 'red';}
+    if (ev.key == 'b'){square.style.backgroundColor = 'blue';}
+    
 })
 
-document.addEventListener("keydown", function(handleKeyboardEvent) {
-    square.style.backgroundColor = 'yellow';
-    console.log(handleKeyboardEvent.keydown);
-})
-
-//document.addEventListener("keydown", function(event) {
-//     console.log(event.which);
-// })
