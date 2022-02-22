@@ -28,6 +28,7 @@ document.addEventListener('keydown', function(ev) {
     if (ev.key == 'y'){square.style.backgroundColor = 'yellow';}
     if (ev.key == 'r'){square.style.backgroundColor = 'red';}
     if (ev.key == 'b'){square.style.backgroundColor = 'blue';}
+    if (ev.key == 'p'){square.style.backgroundColor = 'purple';}
     
 })
 
